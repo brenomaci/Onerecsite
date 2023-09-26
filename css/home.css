@@ -207,15 +207,20 @@ p {
     -o-border-radius: 5px;
 }
 
-#texts {
+#texts-home {
     margin-top: 100px;
+    margin-left: 100px;
+}
+
+#texts-sobre {
+    margin-top: 80px;
     margin-left: 100px;
 }
 
 
 /*------------Início------------*/
 #home{
-    margin-bottom: 65%;
+    margin-bottom: 55%;
 }
 
 #home.logoone {
@@ -261,16 +266,146 @@ h1 {
 
 #home .logocortada {
     margin: 0;
-    width: 290px;
-    height: 600px;
+    width: 250px;
+    height: 550px;
 }
 
 .downbutton{
     margin-top: 10px;
 }
 
-/* ------ Sobre ------- */
+/* --------Colaboradores------- */
+#colaboradores {
+    margin-top: 200px;
+}
 
-#sobre .text-sobre {
-    position: absolute;
+#colaboradores h1{
+    text-align: center;
+}
+
+.container1{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.container1, .container2 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.container1 h1,
+.container2 h1 {
+    font-size: 30px;
+}
+
+.colab1 img{
+    margin-top: 20px;
+    width: 211px;
+    height: 196px;
+    border-radius: 23px;
+    background: rgb(0, 0, 0) 50% / cover no-repeat;
+
+}
+.colab1{
+    width: 253px;
+    height: 284px;
+    border-radius: 23px;
+    background: linear-gradient(162deg, #323232 12.52%, #323232 12.53%, #515151 98.02%);
+}
+
+
+#contato h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.formglobal{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.form{
+    width: 100%;
+    max-width: 50rem;
+    font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button{
+    display: block;
+    width: 100%;
+
+}
+
+.form label{
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea{
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+    -webkit-transition: border-color, box-shadow 0.2s;
+    -moz-transition: border-color, box-shadow 0.2s;
+    -ms-transition: border-color, box-shadow 0.2s;
+    -o-transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea{
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus{
+    outline: none;
+    border-color: rgb(163, 163, 163);
+    box-shadow: 0 0 0 3px #ffffff;
+}
+
+.form button{
+    display: block;
+    padding: 1rem;
+    background: #ffffff;
+    color: #000000;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus{
+    outline: none;
+    background: #535353;
+    color: #fff;
 }
