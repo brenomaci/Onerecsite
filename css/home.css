@@ -3,15 +3,16 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 .logocortada {
+    width: 20%;
     z-index: 1;
 }
 
 section {
     margin-top: 10%;
-    margin-bottom: 20%;
 }
 
 body {
@@ -40,12 +41,13 @@ a:hover {
 nav {
     position: relative;
     padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     height: 8vh;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -79,11 +81,14 @@ nav {
     margin-left: 100px;
 }
 
+.fixonotopo{
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
 
 /*------------Início------------*/
-/* #home{
-    margin-bottom: 20%;
-} */
 
 #home.logoone {
     padding: 0;
@@ -137,9 +142,22 @@ h1 {
 }
 
 /* --------Colaboradores------- */
-/* #colaboradores {
-    margin-top: 200px;
-} */
+
+#sobre {
+    background-color: #fff;
+}
+
+#sobre #texts{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#sobre h1, #sobre p{
+    color: #000000;
+
+}
+
+/* --------Colaboradores------- */
 
 #colaboradores h1 {
     text-align: center;
@@ -199,7 +217,7 @@ h1 {
 
 .form {
     width: 100%;
-    max-width: 40rem;
+    max-width: 80rem;
     padding-right: 30px;
     font-size: 1.125rem;
 }
